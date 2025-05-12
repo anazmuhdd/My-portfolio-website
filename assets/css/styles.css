@@ -260,7 +260,7 @@ img {
 .skills__container {
   row-gap: 1rem;
   text-align: center;
-  align-items: stretch;;
+  align-items: stretch;
 }
 .skills__subtitle {
   position: relative;

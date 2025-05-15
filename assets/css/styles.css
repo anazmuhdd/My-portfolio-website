@@ -219,11 +219,10 @@ img {
   bottom: 0;
   width: 230px;
 }
-.home__blob {
-  fill: var(--first-color);
-}
+
 .home__blob-img {
-  width: 480px;
+  width: 580px;
+  height: 620px;
 }
 
 /*BUTTONS*/

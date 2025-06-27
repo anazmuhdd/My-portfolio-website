@@ -308,6 +308,10 @@ img {
   height: 100%;
   border-radius: 0.5rem;
 }
+.work__link {
+  position: absolute;
+  
+}
 
 /* ===== CONTACT =====*/
 .contact__input {

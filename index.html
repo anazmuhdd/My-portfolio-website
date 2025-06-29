@@ -4,18 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-
     <title>Portfolio</title>
 </head>
-
 <body>
-    <!--===== HEADER =====-->
+    <!--Header-->
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
@@ -26,8 +21,8 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     <li class="nav__item"><a
                             href="https://drive.google.com/file/d/1jzOXSZ73sbgz8dIvGhVog3GC8RechBYW/view?usp=drive_link"
@@ -46,9 +41,12 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Mohammed Anas A R</span>
-                    <span class="home_title-description"><br> Aspiring AI/ML Entusiast | Full Stack Web Dev |
-                        Software<br>Engineer | Engineering Student</span>
+                <h1 class="home__title">
+                    Hi,<br>I'm <span class="home__title-color">Mohammed Anas A R</span>
+                    <br>
+                    <span class="type-container">
+                        <span class="text sec-text">AI/ML Enthusiast</span>
+                    </span>
                 </h1>
             </div>
 
@@ -98,7 +96,196 @@
                 </div>
             </div>
         </section>
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Works</h2>
+            <div class="work__container bd-grid">
+        
+                <div class="work__img">
+                    <img src="./assets/img/she_space.jpeg" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">She Space</h2>
+                    <p class="work__text">
+                        "She Space" is a Booking Management System developed for the Trivandrum Corporation as part of the Smart City Initiative. The system serves as a public-facing and administrative portal that enables users to book facilities across four distinct regions,each with its own custom configuration. I developed a scalable backend using Node.js, Express.js, and MongoDB,and later migrated the system to MySQL for optimized performance. The app was initially deployed on AWS and is publicly accessible through a custom domain.Additionally, I integrated a secure government payment gateway to ensure a smooth and compliant transaction experience. The system is continuously maintained for uptime and stability, and the project received public recognition, including a feature in major newspapers and an acknowledgment from the Honourable Minister of Kerala.
+                        <a href="https://github.com/anazmuhdd/She_Space" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/groundwaterprediction.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">Groundwater Prediction System</h2>
+                    <p class="work__text">
+                        This AI-powered platform is designed to monitor and forecast daily groundwater levels in Coimbatore and other coastal regions. It features an administrative dashboard for government officials and a public interface for real-time data visualization. I trained a CNN-LSTM deep learning model using over 15 years of historical data to accurately predict groundwater trends. Real-time data from official government APIs, including rainfall, temperature, and groundwater measurements, are integrated to ensure up-to-date forecasts. A critical component is the automated alert system, which sends real-time warnings to officials if levels drop below sustainable thresholds. This project highlights the fusion of machine learning, real-time analytics, and civic technology to promote smarter water resource management.
+                        <a href="https://github.com/anazmuhdd/Deep-Learning-model-for-GW-Level-Prediction" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/pumpdemandforecasting.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">Pump Demand Forecasting</h2>
+                    <p class="work__text">
+                        This system is an AI-driven forecasting platform developed to assist MSME pump manufacturers in predicting monthly water pump demand across regions in India.
+                        I used 20 years of historical data—including rainfall, groundwater, and population metrics—to train a robust CNN-LSTM model that predicts upcoming production needs.
+                        The system supports both administrators and public users through a comprehensive web interface that includes visual trend analysis, demand forecasts, and alerts.
+                        Advanced feature engineering and preprocessing methods were employed to merge multiple datasets from government sources.
+                        The platform is currently under review by the MSME department for integration into official workflows, aiming to reduce production inefficiencies and resource misallocations.
+                        <a href="https://github.com/anazmuhdd/Deep-Learning-model-for-GW-Level-Prediction" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/sprtswinpredictor.png" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">Real-Time Sports Win Predictor</h2>
+                    <p class="work__text">
+                        This system provides real-time sports analytics to predict win probabilities during live games using logistic regression.
+                        It was developed as part of my internship work and leverages live match data streamed through CSV files.
+                        The core algorithm factors in momentum shifts by analyzing recent performance trends using NumPy, Pandas, and the deque data structure.
+                        Python’s Watchdog library was used to track live updates and trigger re-evaluation of the win probabilities with every new event.
+                        The tool was tested on real-world match datasets and showed strong performance in forecasting game outcomes as the match progressed.
+                        <a href="https://github.com/anazmuhdd/Sport_Win_Predictor" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/tennisballtracking.gif" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">Tennis Ball Tracking System</h2>
+                    <p class="work__text">
+                        I developed a real-time tennis ball detection and tracking system using TrackNet V3 architecture.
+                        This project focused on computer vision techniques to analyze player performance and ball motion in sports environments.
+                        I collected and annotated a custom dataset using RoboFlow and trained a specialized model to detect and track tennis ball movement under varying court conditions.
+                        Speed tracking was achieved by calculating displacement across video frames, making it a comprehensive analytics tool for tennis matches.
+                        The system was rigorously tested in live scenarios and validated for use in sports analytics and player coaching applications.
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/hwakeyesystem.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">Hawk-Eye Badminton System</h2>
+                    <p class="work__text">
+                        Inspired by the Hawk-Eye technology used in international sports, I helped develop a computer vision system for automatic court line detection and shot validation in badminton matches.
+                        This involved using Hough Transforms and a customized TrackNet model to detect shuttlecock paths and determine whether a shot landed inside or outside the boundaries.
+                        We validated the system under different lighting and court conditions to improve its reliability and accuracy in real-time decisions.
+                        This project contributed significantly to building integrity tools for sports analytics and officiating.
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/flipkarrtreview.webp" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">Flipkart Review Analyzer</h2>
+                    <p class="work__text">
+                        This ML-powered system performs sentiment analysis and fake review detection on Flipkart product reviews.
+                        I built a classification model to detect whether reviews are positive, negative, or neutral, and a separate model to identify spam or fake content.
+                        Techniques included NLP, frequency analysis, and linguistic pattern recognition.
+                        The system was trained and validated on real-world datasets to ensure high accuracy and relevance to e-commerce platforms.
+                        <a href="https://github.com/anazmuhdd/Flipkart_Review_Analyzer" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/whatsapp-bot.png" alt="WhatsApp LLM Bot">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">WhatsApp Generative AI Bot</h2>
+                    <p class="work__text">
+                        An AI-powered chatbot integrated with WhatsApp that uses the LLaMA 3.2 language model running locally via Ollama.
+                        It answers user queries in real-time using LangChain for prompt chaining and Flask as a backend API.
+                        Built with Node.js and Baileys for WhatsApp automation, and Python for LLM processing.
+                        This is a full-stack Generative AI project demonstrating local inference, natural language understanding, and real-time messaging.
+                        <a href="https://github.com/anazmuhdd/Whatsapp-Bot" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
 
+        
+                <div class="work__img">
+                    <img src="assets/img/sightmate.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">Sight Mate</h2>
+                    <p class="work__text">
+                        Sight Mate is an assistive device for the visually impaired that uses a YOLO-based model to recognize Indian currency.
+                        I led a team to refine the system inherited from a senior batch, improving both software and hardware aspects.
+                        The object detection model was trained on a custom dataset for improved accuracy, and the compact hardware was optimized for speed, energy-efficiency, and usability.
+                        The project is officially patented and undergoing final testing for widespread deployment.
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/airesume.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">AI Resume and Cover Letter Builder</h2>
+                    <p class="work__text">
+                        This project is a generative AI system that helps users automatically create resumes and cover letters based on their input skills, experience, and job interests.
+                        I developed a custom LLM backend that processes user input and dynamically generates tailored documents from structured templates and mapped skill-role datasets.
+                        The platform includes a frontend interface for easy data entry and instant document export, aiming to reduce the friction in job application processes.
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/elearning.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">E-Learning Management Website</h2>
+                    <p class="work__text">
+                        I developed a scalable e-learning platform as part of a cloud internship, using the MERN stack and deploying it on AWS using EC2, S3, and RDS.
+                        The platform includes features like course creation, enrollment tracking, user dashboards, and JWT-based authentication.
+                        RESTful APIs and CI/CD pipelines were implemented to ensure a seamless development workflow.
+                        A/B testing and debugging were conducted to improve performance and usability.
+                        <a href="https://github.com/anazmuhdd/ELearningHub" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/toursimwebsite.jpeg" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">Tourism Website with AI Planner</h2>
+                    <p class="work__text">
+                        Built during the Smart India Hackathon Prelims 2024, this tourism platform features an AI-powered trip planner and real-time language translator.
+                        Tourists can input preferences and receive customized itineraries.
+                        The backend was built using FastAPI and Node.js with MongoDB support, while the frontend leveraged JavaScript and Bootstrap for responsive design.
+                        <a href="https://github.com/anazmuhdd/Deep-Learning-model-for-GW-Level-Prediction" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/puzzlesolver.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">NFA-Based Puzzle Game</h2>
+                    <p class="work__text">
+                        I designed a Java-based educational puzzle game using the principles of Non-deterministic Finite Automata (NFA).
+                        The GUI, built with Java Swing, allows players to interactively test word inputs against a state machine, making it both fun and academically relevant.
+                        <a href="https://github.com/anazmuhdd/puzzlesolver" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
+        
+                <div class="work__img">
+                    <img src="assets/img/chatbot.png" alt="">
+                </div>
+                <div>
+                    <h2 class="work__subtitle">AI Chatbot</h2>
+                    <p class="work__text">
+                        I built a Python-based chatbot using the OpenGPT API, aimed at answering user questions across educational and casual topics.
+                        It includes a clean web panel and is trained on a custom dataset for enhanced contextual understanding.
+                        This project showcases the practical power of large language models in creating conversational interfaces.
+                        <a href="https://github.com/anazmuhdd/antappan_chatbot" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
+                    </p>
+                </div>
+        
+            </div>
+        </section>
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
             <h2 class="section-title">Skills</h2>
@@ -332,200 +519,6 @@
             </div>
 
         </section>
-
-        <!--===== WORK =====-->
-        <section class="work section" id="work">
-            <h2 class="section-title">Works</h2>
-            <div class="work__container bd-grid">
-        
-                <div class="work__img">
-                    <img src="./assets/img/she_space.jpeg" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">She Space</h2>
-                    <p class="work__text">
-                        "She Space" is a Booking Management System developed for the Trivandrum Corporation as part of the Smart City Initiative. The system serves as a public-facing and administrative portal that enables users to book facilities across four distinct regions,each with its own custom configuration. I developed a scalable backend using Node.js, Express.js, and MongoDB,and later migrated the system to MySQL for optimized performance. The app was initially deployed on AWS and is publicly accessible through a custom domain.Additionally, I integrated a secure government payment gateway to ensure a smooth and compliant transaction experience. The system is continuously maintained for uptime and stability, and the project received public recognition, including a feature in major newspapers and an acknowledgment from the Honourable Minister of Kerala.
-                        <a href="https://github.com/anazmuhdd/She_Space" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-                <div class="work__img">
-                    <img src="./assets/img/groundwaterprediction.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">Groundwater Prediction System</h2>
-                    <p class="work__text">
-                        This AI-powered platform is designed to monitor and forecast daily groundwater levels in Coimbatore and other coastal regions. It features an administrative dashboard for government officials and a public interface for real-time data visualization. I trained a CNN-LSTM deep learning model using over 15 years of historical data to accurately predict groundwater trends. Real-time data from official government APIs, including rainfall, temperature, and groundwater measurements, are integrated to ensure up-to-date forecasts. A critical component is the automated alert system, which sends real-time warnings to officials if levels drop below sustainable thresholds. This project highlights the fusion of machine learning, real-time analytics, and civic technology to promote smarter water resource management.
-                        <a href="https://github.com/anazmuhdd/Deep-Learning-model-for-GW-Level-Prediction" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/pumpdemandforecasting.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">Pump Demand Forecasting</h2>
-                    <p class="work__text">
-                        This system is an AI-driven forecasting platform developed to assist MSME pump manufacturers in predicting monthly water pump demand across regions in India.
-                        I used 20 years of historical data—including rainfall, groundwater, and population metrics—to train a robust CNN-LSTM model that predicts upcoming production needs.
-                        The system supports both administrators and public users through a comprehensive web interface that includes visual trend analysis, demand forecasts, and alerts.
-                        Advanced feature engineering and preprocessing methods were employed to merge multiple datasets from government sources.
-                        The platform is currently under review by the MSME department for integration into official workflows, aiming to reduce production inefficiencies and resource misallocations.
-                        <a href="https://github.com/anazmuhdd/Deep-Learning-model-for-GW-Level-Prediction" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/sprtswinpredictor.png" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">Real-Time Sports Win Predictor</h2>
-                    <p class="work__text">
-                        This system provides real-time sports analytics to predict win probabilities during live games using logistic regression.
-                        It was developed as part of my internship work and leverages live match data streamed through CSV files.
-                        The core algorithm factors in momentum shifts by analyzing recent performance trends using NumPy, Pandas, and the deque data structure.
-                        Python’s Watchdog library was used to track live updates and trigger re-evaluation of the win probabilities with every new event.
-                        The tool was tested on real-world match datasets and showed strong performance in forecasting game outcomes as the match progressed.
-                        <a href="https://github.com/anazmuhdd/Sport_Win_Predictor" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/tennisballtracking.gif" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">Tennis Ball Tracking System</h2>
-                    <p class="work__text">
-                        I developed a real-time tennis ball detection and tracking system using TrackNet V3 architecture.
-                        This project focused on computer vision techniques to analyze player performance and ball motion in sports environments.
-                        I collected and annotated a custom dataset using RoboFlow and trained a specialized model to detect and track tennis ball movement under varying court conditions.
-                        Speed tracking was achieved by calculating displacement across video frames, making it a comprehensive analytics tool for tennis matches.
-                        The system was rigorously tested in live scenarios and validated for use in sports analytics and player coaching applications.
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/hwakeyesystem.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">Hawk-Eye Badminton System</h2>
-                    <p class="work__text">
-                        Inspired by the Hawk-Eye technology used in international sports, I helped develop a computer vision system for automatic court line detection and shot validation in badminton matches.
-                        This involved using Hough Transforms and a customized TrackNet model to detect shuttlecock paths and determine whether a shot landed inside or outside the boundaries.
-                        We validated the system under different lighting and court conditions to improve its reliability and accuracy in real-time decisions.
-                        This project contributed significantly to building integrity tools for sports analytics and officiating.
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/flipkarrtreview.webp" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">Flipkart Review Analyzer</h2>
-                    <p class="work__text">
-                        This ML-powered system performs sentiment analysis and fake review detection on Flipkart product reviews.
-                        I built a classification model to detect whether reviews are positive, negative, or neutral, and a separate model to identify spam or fake content.
-                        Techniques included NLP, frequency analysis, and linguistic pattern recognition.
-                        The system was trained and validated on real-world datasets to ensure high accuracy and relevance to e-commerce platforms.
-                        <a href="https://github.com/anazmuhdd/Flipkart_Review_Analyzer" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/whatsapp-bot.png" alt="WhatsApp LLM Bot">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">WhatsApp Generative AI Bot</h2>
-                    <p class="work__text">
-                        An AI-powered chatbot integrated with WhatsApp that uses the LLaMA 3.2 language model running locally via Ollama.
-                        It answers user queries in real-time using LangChain for prompt chaining and Flask as a backend API.
-                        Built with Node.js and Baileys for WhatsApp automation, and Python for LLM processing.
-                        This is a full-stack Generative AI project demonstrating local inference, natural language understanding, and real-time messaging.
-                        <a href="https://github.com/anazmuhdd/Whatsapp-Bot" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-
-        
-                <div class="work__img">
-                    <img src="assets/img/sightmate.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">Sight Mate</h2>
-                    <p class="work__text">
-                        Sight Mate is an assistive device for the visually impaired that uses a YOLO-based model to recognize Indian currency.
-                        I led a team to refine the system inherited from a senior batch, improving both software and hardware aspects.
-                        The object detection model was trained on a custom dataset for improved accuracy, and the compact hardware was optimized for speed, energy-efficiency, and usability.
-                        The project is officially patented and undergoing final testing for widespread deployment.
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/airesume.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">AI Resume and Cover Letter Builder</h2>
-                    <p class="work__text">
-                        This project is a generative AI system that helps users automatically create resumes and cover letters based on their input skills, experience, and job interests.
-                        I developed a custom LLM backend that processes user input and dynamically generates tailored documents from structured templates and mapped skill-role datasets.
-                        The platform includes a frontend interface for easy data entry and instant document export, aiming to reduce the friction in job application processes.
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/elearning.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">E-Learning Management Website</h2>
-                    <p class="work__text">
-                        I developed a scalable e-learning platform as part of a cloud internship, using the MERN stack and deploying it on AWS using EC2, S3, and RDS.
-                        The platform includes features like course creation, enrollment tracking, user dashboards, and JWT-based authentication.
-                        RESTful APIs and CI/CD pipelines were implemented to ensure a seamless development workflow.
-                        A/B testing and debugging were conducted to improve performance and usability.
-                        <a href="https://github.com/anazmuhdd/ELearningHub" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/toursimwebsite.jpeg" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">Tourism Website with AI Planner</h2>
-                    <p class="work__text">
-                        Built during the Smart India Hackathon Prelims 2024, this tourism platform features an AI-powered trip planner and real-time language translator.
-                        Tourists can input preferences and receive customized itineraries.
-                        The backend was built using FastAPI and Node.js with MongoDB support, while the frontend leveraged JavaScript and Bootstrap for responsive design.
-                        <a href="https://github.com/anazmuhdd/Deep-Learning-model-for-GW-Level-Prediction" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/puzzlesolver.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">NFA-Based Puzzle Game</h2>
-                    <p class="work__text">
-                        I designed a Java-based educational puzzle game using the principles of Non-deterministic Finite Automata (NFA).
-                        The GUI, built with Java Swing, allows players to interactively test word inputs against a state machine, making it both fun and academically relevant.
-                        <a href="https://github.com/anazmuhdd/puzzlesolver" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-        
-                <div class="work__img">
-                    <img src="assets/img/chatbot.png" alt="">
-                </div>
-                <div>
-                    <h2 class="work__subtitle">AI Chatbot</h2>
-                    <p class="work__text">
-                        I built a Python-based chatbot using the OpenGPT API, aimed at answering user questions across educational and casual topics.
-                        It includes a clean web panel and is trained on a custom dataset for enhanced contextual understanding.
-                        This project showcases the practical power of large language models in creating conversational interfaces.
-                        <a href="https://github.com/anazmuhdd/antappan_chatbot" class="work__link">Github<i class="bx bx-arrow-out-up-right-square bx-tada "></i></a>
-                    </p>
-                </div>
-        
-            </div>
-        </section>
-        
-
-
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <div class="contact__container bd-grid">

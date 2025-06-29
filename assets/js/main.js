@@ -11,6 +11,31 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+
+const text = document.querySelector(".sec-text");
+const roles = [
+    "AI/ML Enthusiast",
+    "Full Stack Web Dev",
+    "Software Engineer",
+    "Engineering Student"
+];
+let i = 0;
+const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "AI/ML Enthusiast";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Full Stack Web Dev";
+            }, 2000);
+            setTimeout(() => {
+                text.textContent = "Software Engineer";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Engineering Student";
+            }, 6000); //1s = 1000 milliseconds
+        }
+textLoad();
+setInterval(textLoad, 8000);
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -51,9 +76,9 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2000,
-    delay: 200,
-//     reset: true
+    duration: 1500,
+    delay: 300,
+    reset: true
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 

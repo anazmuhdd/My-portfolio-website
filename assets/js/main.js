@@ -10,32 +10,6 @@ const showMenu = (toggleId, navId) =>{
     }
 }
 showMenu('nav-toggle','nav-menu')
-
-
-const text = document.querySelector(".sec-text");
-const roles = [
-    "AI/ML Enthusiast",
-    "Full Stack Web Dev",
-    "Software Engineer",
-    "Engineering Student"
-];
-let i = 0;
-const textLoad = () => {
-            setTimeout(() => {
-                text.textContent = "AI/ML Enthusiast";
-            }, 0);
-            setTimeout(() => {
-                text.textContent = "Full Stack Web Dev";
-            }, 2000);
-            setTimeout(() => {
-                text.textContent = "Software Engineer";
-            }, 4000);
-            setTimeout(() => {
-                text.textContent = "Engineering Student";
-            }, 6000); //1s = 1000 milliseconds
-        }
-textLoad();
-setInterval(textLoad, 8000);
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -66,22 +40,35 @@ const scrollActive = () =>{
     })
 }
 window.addEventListener('scroll', scrollActive)
+const text = document.querySelector(".sec-text");
+const roles = [
+    "AI/ML Enthusiast",
+    "Full Stack Web Dev",
+    "Software Engineer",
+    "Engineering Student"
+];
 
+let roleIndex = 0;
 
+function showNextRole() {
+    text.textContent = roles[roleIndex];
+    roleIndex = (roleIndex + 1) % roles.length;
+}
 
+// Show the first role immediately
+showNextRole();
 
-
-
+// Change role every 2 seconds
+setInterval(showNextRole, 2000);
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 1500,
-    delay: 300,
-    reset: true
+    delay: 300
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+sr.reveal('.about__img, .skills__subtitle, .skills__text', {});
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', { delay: 400 });
+sr.reveal('.home__social-icon', { interval: 200 });
+sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
